@@ -69,29 +69,34 @@ void guardar(const std::string& nombre_archivo, Risk& juego) {
 }
 void guardar_comprimido(const std::string& nombre_archivo, Risk& juego) {
     guardar(nombre_archivo, juego);
-    
+    encodeFile(nombre_archivo,nombre_archivo+".bin");
     // Borra el archivo original
     if (std::remove(nombre_archivo.c_str()) != 0) {
         std::cerr << "Error al borrar el archivo original." << std::endl;
-    }
-    
-    // Renombra el archivo comprimido
-    std::string nuevo_nombre = nombre_archivo + ".bin";
-    if (std::rename(nuevo_nombre.c_str(), nombre_archivo.c_str()) != 0) {
-        std::cerr << "Error al renombrar el archivo comprimido." << std::endl;
     }
 
     return;
 }
 
-void inicializar_archivo(const std::string& nombre_archivo,Risk& juego) {
-    // Abre el archivo de texto para cargar el juego
-    std::ifstream archivo(nombre_archivo);
-    if (!archivo.is_open()) {
+void inicializar_archivo(std::string& nombre_archivo,Risk& juego) {
+    std::string extension = nombre_archivo.substr(nombre_archivo.find_last_of('.') + 1);
+
+    std::ifstream archivo;
+    if (extension == "bin") {
+        archivo = std::ifstream(nombre_archivo);
+        if (!archivo.is_open()) {
         std::cerr << "Error al abrir el archivo para cargar el juego." << std::endl;
         return;
     }
-
+        decodeFile(nombre_archivo,nombre_archivo+".txt");
+        nombre_archivo=nombre_archivo+".txt";
+        archivo.close();
+    }
+    archivo = std::ifstream(nombre_archivo);
+         if (!archivo.is_open()) {
+        std::cerr << "Error al abrir el archivo para cargar el juego." << std::endl;
+        return;
+    }
     // Variables temporales para almacenar datos mientras se lee el archivo
     int num_jugadores = 0;
     std::string linea;
@@ -228,6 +233,7 @@ void buildHuffmanTree(std::vector<HuffmanNode*>& nodes) {
     }
 }
 
+
 void encodeFile(const std::string& inputFileName, const std::string& outputFileName) {
     std::ifstream inputFile(inputFileName, std::ios::in | std::ios::binary);
     std::ofstream outputFile(outputFileName, std::ios::out | std::ios::binary);
@@ -249,7 +255,12 @@ void encodeFile(const std::string& inputFileName, const std::string& outputFileN
     generateHuffmanCodes(nodes[0], "", huffmanCodes);
     // Escribir la tabla de códigos Huffman en el archivo de salida
     for (auto pair : huffmanCodes) {
-        std::cout << pair.first << pair.second << '\n';
+        
+        std::cout <<"Symbol: " <<pair.first<<" Code: " << pair.second << '\n';
+        char symbol = pair.first;
+        if(symbol=='\n')
+        outputFile <<"?"<< pair.second << '\n';
+        else
         outputFile << pair.first << pair.second << '\n';
     }
 
@@ -257,7 +268,7 @@ void encodeFile(const std::string& inputFileName, const std::string& outputFileN
     inputFile.clear();
     inputFile.seekg(0, std::ios::beg);
 
-    std::string encodedBits="";
+    std::string encodedBits="#";
     while (inputFile.get(c)) {
         encodedBits += huffmanCodes[c];
     }
@@ -266,7 +277,7 @@ void encodeFile(const std::string& inputFileName, const std::string& outputFileN
     while (encodedBits.length() % 8 != 0) {
         encodedBits += "0";
     }
-    std::cout<<encodedBits<<std::endl;
+    std::cout<<"BITS: "<<encodedBits<<std::endl;
     // Convertir la cadena de bits en bytes y escribirlos en el archivo de salida
     outputFile<<encodedBits;
     inputFile.close();
@@ -287,13 +298,18 @@ void decodeFile(const std::string& inputFileName, const std::string& outputFileN
     while (std::getline(inputFile, line)) {
         if (!line.empty()) {
             char symbol = line[0];
+            if (symbol!='#'){
             std::string code = line.substr(1);
-            std::cout << "CODE: "<<code<<std::endl;
-            huffmanCodes[code] = symbol;
+            std::cout<<"Symbol: "<<symbol << " CODE: "<<code<<std::endl;
+            if (symbol=='?')
+                symbol='\n';
+            huffmanCodes[code] = symbol;}
+            else
+                line = line.substr(1);
         }
     }
 
-    std::string encodedBits="";
+    std::string encodedBits=line;
     char c;
     while (inputFile.get(c)) {
         std::bitset<8> byte(c);

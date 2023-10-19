@@ -42,6 +42,6 @@ void decodeFile(const std::string& inputFileName, const std::string& outputFileN
 
 void guardar(const std::string& file, Risk& juego);
 void guardar_comprimido(const std::string& nombre_archivo,Risk& juego);
-void inicializar_archivo(const std::string& nombre_archivo,Risk& juego);
+void inicializar_archivo(std::string& nombre_archivo,Risk& juego);
 void detalles(const Risk& juego);
 #endif //  HUFFMAN_H

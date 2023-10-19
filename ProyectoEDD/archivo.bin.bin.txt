@@ -1,0 +1,231 @@
+Información del juego:
+Cantidad de jugadores: 3
+Jugador: a
+Color: 
+Tropas: 21
+Países del jugador:
+Nombre del país:   Alaska
+Continente: América del Norte
+Dueño:   a
+Tropas en el país: 1
+Países vecinos:
+Nombre del país:   Estados Unidos Orientales
+Continente: América del Norte
+Dueño:   a
+Tropas en el país: 1
+Países vecinos:
+Nombre del país:   Ontario
+Continente: América del Norte
+Dueño:   a
+Tropas en el país: 1
+Países vecinos:
+Nombre del país:   Argentina
+Continente: América del Sur
+Dueño:   a
+Tropas en el país: 1
+Países vecinos:
+Nombre del país:   Venezuela
+Continente: América del Sur
+Dueño:   a
+Tropas en el país: 1
+Países vecinos:
+Nombre del país:   Nueva Guinea
+Continente: Australia
+Dueño:   a
+Tropas en el país: 1
+Países vecinos:
+Nombre del país:   Islandia
+Continente: Europa
+Dueño:   a
+Tropas en el país: 1
+Países vecinos:
+Nombre del país:   Europa del Sur
+Continente: Europa
+Dueño:   a
+Tropas en el país: 1
+Países vecinos:
+Nombre del país:   Afghanistan
+Continente: Asia
+Dueño:   a
+Tropas en el país: 1
+Países vecinos:
+Nombre del país:   Irkutsk
+Continente: Asia
+Dueño:   a
+Tropas en el país: 1
+Países vecinos:
+Nombre del país:   Medio Oriente
+Continente: Asia
+Dueño:   a
+Tropas en el país: 1
+Países vecinos:
+Nombre del país:   Siberia
+Continente: Asia
+Dueño:   a
+Tropas en el país: 1
+Países vecinos:
+Nombre del país:   Congo
+Continente: África
+Dueño:   a
+Tropas en el país: 1
+Países vecinos:
+Nombre del país:   Madagascar
+Continente: África
+Dueño:   a
+Tropas en el país: 1
+Países vecinos:
+Cartas del jugador:
+-----------------------------------
+Jugador: b
+Color: 
+Tropas: 21
+Países del jugador:
+Nombre del país:   Alberta
+Continente: América del Norte
+Dueño:   b
+Tropas en el país: 1
+Países vecinos:
+Nombre del país:   Groenlandia
+Continente: América del Norte
+Dueño:   b
+Tropas en el país: 1
+Países vecinos:
+Nombre del país:   Quebec
+Continente: América del Norte
+Dueño:   b
+Tropas en el país: 1
+Países vecinos:
+Nombre del país:   Brasil
+Continente: América del Sur
+Dueño:   b
+Tropas en el país: 1
+Países vecinos:
+Nombre del país:   Australia Oriental
+Continente: Australia
+Dueño:   b
+Tropas en el país: 1
+Países vecinos:
+Nombre del país:   Australia Occidental
+Continente: Australia
+Dueño:   b
+Tropas en el país: 1
+Países vecinos:
+Nombre del país:   Europa del Norte
+Continente: Europa
+Dueño:   b
+Tropas en el país: 1
+Países vecinos:
+Nombre del país:   Ucrania
+Continente: Europa
+Dueño:   b
+Tropas en el país: 1
+Países vecinos:
+Nombre del país:   China
+Continente: Asia
+Dueño:   b
+Tropas en el país: 1
+Países vecinos:
+Nombre del país:   Japon
+Continente: Asia
+Dueño:   b
+Tropas en el país: 1
+Países vecinos:
+Nombre del país:   Mongolia
+Continente: Asia
+Dueño:   b
+Tropas en el país: 1
+Países vecinos:
+Nombre del país:   Ural
+Continente: Asia
+Dueño:   b
+Tropas en el país: 1
+Países vecinos:
+Nombre del país:   África Oriental
+Continente: África
+Dueño:   b
+Tropas en el país: 1
+Países vecinos:
+Nombre del país:   África del Norte
+Continente: África
+Dueño:   b
+Tropas en el país: 1
+Países vecinos:
+Cartas del jugador:
+-----------------------------------
+Jugador: c
+Color: 
+Tropas: 21
+Países del jugador:
+Nombre del país:   América Central
+Continente: América del Norte
+Dueño:   c
+Tropas en el país: 1
+Países vecinos:
+Nombre del país:   Territorio Noroccidental
+Continente: América del Norte
+Dueño:   c
+Tropas en el país: 1
+Países vecinos:
+Nombre del país:   Estados Unidos Occidentales
+Continente: América del Norte
+Dueño:   c
+Tropas en el país: 1
+Países vecinos:
+Nombre del país:   Perú
+Continente: América del Sur
+Dueño:   c
+Tropas en el país: 1
+Países vecinos:
+Nombre del país:   Indonesia
+Continente: Australia
+Dueño:   c
+Tropas en el país: 1
+Países vecinos:
+Nombre del país:   Gran Bretaña
+Continente: Europa
+Dueño:   c
+Tropas en el país: 1
+Países vecinos:
+Nombre del país:   Escandinavia
+Continente: Europa
+Dueño:   c
+Tropas en el país: 1
+Países vecinos:
+Nombre del país:   Europa Occidental
+Continente: Europa
+Dueño:   c
+Tropas en el país: 1
+Países vecinos:
+Nombre del país:   India
+Continente: Asia
+Dueño:   c
+Tropas en el país: 1
+Países vecinos:
+Nombre del país:   Kamchatka
+Continente: Asia
+Dueño:   c
+Tropas en el país: 1
+Países vecinos:
+Nombre del país:   Siam
+Continente: Asia
+Dueño:   c
+Tropas en el país: 1
+Países vecinos:
+Nombre del país:   Yakutsk
+Continente: Asia
+Dueño:   c
+Tropas en el país: 1
+Países vecinos:
+Nombre del país:   Egipto
+Continente: África
+Dueño:   c
+Tropas en el país: 1
+Países vecinos:
+Nombre del país:   África del Sur
+Continente: África
+Dueño:   c
+Tropas en el país: 1
+Países vecinos:
+Cartas del jugador:
+-----------------------------------
+e
