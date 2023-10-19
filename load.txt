@@ -1,0 +1,5 @@
+#jugadores
+a
+b
+c
+#paises

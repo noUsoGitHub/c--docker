@@ -1,0 +1,42 @@
+Alaska,América del Norte,vacio
+Alberta,América del Norte,vacio
+América Central,América del Norte,vacio
+Estados Unidos Orientales,América del Norte,vacio
+Groenlandia,América del Norte,vacio
+Territorio Noroccidental,América del Norte,vacio
+Ontario,América del Norte,vacio
+Quebec,América del Norte,vacio
+Estados Unidos Occidentales,América del Norte,vacio
+Argentina,América del Sur,vacio
+Brasil,América del Sur,vacio
+Perú,América del Sur,vacio
+Venezuela,América del Sur,vacio
+Australia Oriental,Australia,vacio
+Indonesia,Australia,vacio
+Nueva Guinea,Australia,vacio
+Australia Occidental,Australia,vacio
+Gran Bretaña,Europa,vacio
+Islandia,Europa,vacio
+Europa del Norte,Europa,vacio
+Escandinavia,Europa,vacio
+Europa del Sur,Europa,vacio
+Ucrania,Europa,vacio
+Europa Occidental,Europa,vacio
+Afghanistan,Asia,vacio
+China,Asia,vacio
+India,Asia,vacio
+Irkutsk,Asia,vacio
+Japon,Asia,vacio
+Kamchatka,Asia,vacio
+Medio Oriente,Asia,vacio
+Mongolia,Asia,vacio
+Siam,Asia,vacio
+Siberia,Asia,vacio
+Ural,Asia,vacio
+Yakutsk,Asia,vacio
+Congo,África,vacio
+África Oriental,África,vacio
+Egipto,África,vacio
+Madagascar,África,vacio
+África del Norte,África,vacio
+África del Sur,África,vacio
